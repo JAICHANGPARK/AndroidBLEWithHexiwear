@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonScan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Scan" />-->
+
+    <info.hoang8f.widget.FButton
+        android:layout_margin="6dp"
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:buttonColor="@color/fbutton_color_peter_river"
+        app:shadowColor="@color/fbutton_color_belize_hole"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="5dp"
+        android:text="Scan" />
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/buttonScan"
+        app:wlv_borderColor="@color/colorAccent"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="40"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="24sp"
+        app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="40"
+        app:wlv_waveColor="@color/colorAccent" />
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_below="@+id/editText2"-->
+    <!--android:layout_alignStart="@+id/editText2"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignEnd="@+id/serialSendText">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/serialReveicedText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:textSize="10sp"-->
+    <!--android:layout_below="@+id/editText2"-->
+    <!--android:layout_alignStart="@+id/editText2"-->
+    <!--android:layout_alignEnd="@+id/serialSendText"-->
+    <!--android:layout_alignParentBottom="true" />-->
+    <!--</ScrollView>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonSerialSend"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/serialSendText"-->
+        <!--android:layout_toRightOf="@+id/buttonScan"-->
+        <!--android:text="Send Data" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/editText2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/serialSendText"-->
+        <!--android:layout_below="@+id/serialSendText"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:ems="10"-->
+        <!--android:text="Received Data:"-->
+        <!--android:textSize="25sp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/serialSendText"-->
+        <!--android:layout_width="310dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_below="@+id/buttonScan"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:background="#555555"-->
+        <!--android:bufferType="editable"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="text"-->
+        <!--android:text="Data sending Area"-->
+        <!--android:textColor="#999999"-->
+        <!--android:textSize="20dip" />-->
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonClear"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toRightOf="@id/buttonSerialSend"-->
+        <!--android:text="Clear" />-->
+
+</RelativeLayout>
